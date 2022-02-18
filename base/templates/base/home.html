@@ -1,6 +1,51 @@
 {% extends 'base/main.html' %}
-
+{% load static %}
 {% block content %}
-<h2 style="color: #8cc751;">Welcome</h2>
-<h2 style="color: #8cc751;"> to the corner of the World!!!</h2>
+
+
+
+
+<section class="" style="min-height: 100vh; width: 100% align-items:center; justify-content:center; ">
+  <!--  <a href="https://www.instagram.com/doodle_bites/" class="fa fa-instagram" style=" background: #ACE1AF;
+  color: white; padding: 5px;
+  font-size: 30px;
+   position: absolute;
+  top: 60px;
+  right: 320px;
+  font-size: 18px;
+
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}"></a>-->
+    <div class="container" style="width:50%; max-width:900px; margin:0 auto; display:flex; align-items:center; justify-content: center;">
+    <div class="left" >
+        <img src="{% static 'images/about/home.jpg' %}"class="rounded float-end" style="width:115%; " alt="...">
+    </div>
+
+    <div class="left" style="width:50%; min-height:700px; display: flex; margin-left: -120px; padding:30px; ">
+        <div class="content">
+            <p class="containerbackground" style="
+			color: #6B8E23; font-family: 'Yesteryear', cursive; @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+			font-weight: -20;
+			margin: 3rem;
+            position: absolute;
+            top: 590px;
+            font-size: 39px;
+  			left: 860px;
+  			transform: rotate(-90deg);
+            ">
+            	Lets Create
+       		 </p>
+           <h1 style=" font-size: 60px; color: #6B8E23; font-family: 'Yesteryear', cursive; @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');">Welcome</h1>
+           <h2 style=" font-size: 30px; color: #6B8E23;  font-family: 'Yesteryear', cursive; @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');"> to our corner of the World!!!</h2>
+
+        </div>
+
+    </div>
+</div>
+</section>
+
+
 {% endblock content %}

@@ -138,3 +138,9 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = BASE_DIR / 'static/images'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBacked'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'durwa123@gmail.com'
+EMAIL_HOST_PASSWORD = ''

@@ -1,0 +1,75 @@
+
+{% extends 'base/main.html' %}
+
+{% block content %}
+
+<!--
+<div class="col-md-12 mt-3" style="padding-left:50px; padding-right:50px;">
+    <div class="row gy-3">
+        {% for b in bit %}
+                    <div class="col-md-3">
+                        <div class="card my-2">
+                            <img class="image-thumbail" src="{{b.image.url}}" alt="Card image cap" style="">
+                        </div>
+                    </div>
+                    {% empty %}
+                    <h3>No photos...</h3>
+                    {% endfor %}
+    </div>
+</div>
+
+-->
+
+<!--
+<div class="row row-cols-1 row-cols-md-3" style=" padding-left:50px; padding-right:55px; ">
+  {% for b in bit %}
+  <div class="col">
+      <img src="{{b.image.url}}" class="card-img-top"  >
+  </div>
+{% endfor %}
+</div>
+-->
+
+
+<!--
+<div class="container mt-3">
+    <div class="row" data-masonry='{"percentPosition": true }'>
+       {% for b in bit %}
+        <div class="col-md-4">
+            <img src="{{b.image.url}}" class="card-img-top"  >
+        </div>
+      {%  endfor %}
+    </div>
+</div>
+-->
+
+<!--new one-->
+<!--
+<section class='grid--masonry' style=" padding-left:50px; padding-right:55px; " >
+   <div class="row" data-masonry='{"percentPosition": true }'>
+       {% for b in bit %}
+        <div class="col-md-4 mt-3">
+            <img src="{{b.image.url}}" class="card-img-top"  >
+        </div>
+      {%  endfor %}
+    </div>
+</section>
+-->
+
+
+<div class="grid" style="  grid-gap: 10px;  padding-left:50px; padding-right:55px; padding-top:15px; margin: 0 auto; display: columns; columns:3; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); grid-template-rows: masonry; grid-auto-flow: dense; ">
+
+    <div class="content flow"  >
+
+            {% for b in bit %}
+            <img src="{{b.image.url}}" class="card-img-top" >
+             {%  endfor %}
+
+    </div>
+
+</div>
+
+
+
+{% endblock content %}
+

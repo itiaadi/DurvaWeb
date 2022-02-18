@@ -1,0 +1,141 @@
+
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+<!--for home-->
+<section class="s1" xmlns="http://www.w3.org/1999/html">
+		<div class="container mt-3" style="width:50%; max-width:900px; margin:0 auto; display:flex; align-items:center; justify-content: center;">
+    <div class="left" >
+        <img src="{% static 'images/about/b4.jpg' %}"class="rounded float-end" style="width:450px; height:650px" alt="...">
+    </div>
+
+    <div class="left" style="width:50%; min-height:500px; display: flex; margin-left: -120px; padding:30px; ">
+        <div class="content">
+			<p class="containerbackground" style="
+			font-family: 'Italiana', serif;
+			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+			font-weight: -10;
+			margin: 3rem;
+            position: absolute;
+            top: 100px;
+            font-size: 120px;
+  			right: 220px;
+            color: #c6afaf;">
+            	CREATE
+       		 </p>
+           <h1 style=" position: relative; font-size: 70px; color:#65000B; font-family: 'Italiana', serif;
+			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');">Let's Work</h1>
+           <h2 style=" position: relative; font-size: 70px; color: #65000B;  font-family: 'Italiana', serif;
+			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');"> Together!!</h2>
+
+
+		   <h3 style=" top: 100px; font-size: 20px; left: 100px; font-weight: 10; position: relative;  color: #65000B;  font-family: 'Federo', sans-serif;
+			@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');">If you'd like to explore more,</h3>
+		   <h6 style="top: 100px; font-size: 20px; left: 100px; font-weight: 10; position: relative;  color: #65000B;  font-family: 'Federo', sans-serif;
+			@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');">or have a project in mind</h6>
+			<h6 style=" top: 100px; font-size: 20px; left: 100px; font-weight: 10; position: relative;  color: #65000B;  font-family: 'Federo', sans-serif;
+			@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');">that you will to collaborate with,</h6>
+		   <h6 style="top: 100px; font-size: 20px; left: 100px; font-weight: 10; position: relative;  color: #65000B;  font-family: 'Federo', sans-serif;
+			@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');">Get in touch, would like to hear from you.</h6>
+		   <h6 style="top: 90px; left: 300px; position: relative;  color: #65000B;  font-family: 'Federo', sans-serif;
+			@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');"><a class="btn " style="background-color: #004526;  border-radius: 0 !important; " href="{% url 'contact' %}" role="button">Contact</a></h6>
+        </div>
+
+    </div>
+</div>
+	</section>
+
+
+<!--for about-->
+	<section class="s2">
+		<div class="container mt-3" style="width:50%; max-width:900px; margin:0 auto; display:flex; align-items:center; justify-content: center;">
+      <div class="left" style="width:50%; min-height:500px; display: flex; margin-left: -110px; padding:20px; ">
+        <div class="content">
+			<p class="containerbackground" style=" font-family: 'Italiana', serif;
+			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+			margin: 3rem;
+            position: absolute;
+            top: 700px;
+            font-size: 250px;
+  			left: 220px;
+            color: #E6E6FA;"><lead>
+            	CREATE</lead>
+       		 </p>
+           <h1 style=" left: 70px; top: -60px; position: relative; font-size: 70px; color:#4A5D23; font-family: 'Italiana', serif;
+			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');"><a href="{% url 'about' %}" style="color:#4A5D23;text-decoration:none;" >ABOUT</a></h1>
+
+		   <h6 style="top: 200px; font-size: 40px; left: 100px; font-weight: 10; position: relative;  color: #65000B;  font-family: 'Federo', sans-serif;
+			@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');">Hey!!</h6>
+		   <h6 style="top: 200px; font-size: 30px; left: 100px; font-weight: 10; position: relative;  color: #65000B;  font-family: 'Federo', sans-serif;
+			@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');">This is Durwa Sonawdekar</h6>
+            <h6 style="top: 200px; font-size: 30px; left: 100px; font-weight: 10; position: relative;  color: #65000B;  font-family: 'Federo', sans-serif;
+			@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');">Good to see you here..</h6>
+        </div>
+    </div>
+    <div class="left" >
+        <img src="{% static 'images/about/b4.jpg' %}"class="rounded float-end" style="width:450px; height:650px" alt="...">
+    </div>
+</div>
+	</section>
+
+<!-- for studio-->
+<section class="s1" >
+		<div class="container mt-3" style="width:50%; max-width:900px; margin:0 auto; display:flex; align-items:center; justify-content: center;">
+
+
+    <div class="left" style="width:100%; min-height:500px; display: flex; margin-left: -120px; padding:30px; ">
+        <div class="content">
+			<p class="containerbackground" style="
+			font-family: 'Italiana', serif;
+			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+			font-weight: -20;
+			margin: 3rem;
+            position: absolute;
+            top: 1620px;
+            font-size: 180px;
+  			left: 150px;
+  			transform: rotate(-90deg);
+            color: #c6afaf;">
+            	CREATE
+       		 </p>
+          <h1 style=" left: 130px; top: 20px; position: relative; font-size: 60px; color:#4A5D23; font-family: 'Italiana', serif;
+			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');"><strong>THE STUDIO</strong></h1>
+
+		  <h2 style="font-family: 'Amaranth', sans-serif; @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');  position:absolute;
+  left:530px;
+  top: 1660px; color:maroon"><a href="{% url 'doodledesign' %}" style="color:maroon; text-decoration:none;" >Doodle Design</a></h2>
+		  <h2 style="font-family: 'Amaranth', sans-serif; @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap'); position:absolute;
+  left:850px;
+  top: 1800px; color:maroon"><a href="{% url 'doodlebites' %}" style="color:maroon; text-decoration:none;" >Doodle Bites</a></h2>
+		  <h2 style="font-family: 'Amaranth', sans-serif; @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap'); color:maroon;
+			position:absolute;
+  left:575px;
+  top: 1950px;" ><a href="{% url 'motion' %}" style="color:maroon; text-decoration:none;" >Doodle Motion</a></h2>
+
+			<div class="square" style="height: 300px;
+  width: 300px;
+  position:absolute;
+  left:800px;
+  top: 1500px;
+  background-color: #D0F0C0;"></div>
+			<div class="square" style="height: 200px;
+  width: 200px;
+  position:absolute;
+  left:780px;
+  top: 1950px;
+  background-color: #D0F0C0;"></div>
+
+        </div>
+
+		<p class="solid " style="height: 250px;
+		outline-style: solid;
+  width: 250px;
+  position:absolute;
+  left:600px;
+  top: 1700px;"></p>
+    </div>
+</div>
+	</section>
+
+{% endblock content %}

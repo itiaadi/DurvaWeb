@@ -1,5 +1,48 @@
 {% extends 'base/main.html' %}
 
 {% block content %}
-<h2>studion</h2>
+
+
+    <ul class="list-group list-group-horizontal" style="padding-left:50px; padding-right:50px;  ">
+        {% for category in categories %}
+         <a href="{% url 'studio' %}?category={{category.name}}" class="list-group-item list-group-item-action" style="background:#ACE1AF;">{{category.name}}</a>
+        {% endfor %}
+         <a href="{% url 'motion' %}" class="list-group-item list-group-item-action"  style="background:#ACE1AF;">Doodle Motion</a>
+
+    </ul>
+<!--
+    <div class="col-md-12 mt-3" style="padding-left:50px; padding-right:50px;">
+    <div class="row gy-3">
+        {% for photo in photos %}
+                    <div class="col-md-3">
+                        <div class="card my-2">
+                            <a href="{% url 'photo' photo.id %}" class="btn btn-outline-dark btn-sm m-1"><img class="image-thumbail" src="{{photo.image.url}}" alt="Card image cap" style="height: 200px;">
+                            </a>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <h3>No photos...</h3>
+                    {% endfor %}
+    </div>
+</div>
+
+-->
+
+<div class="col-md-12 mt-3" style="padding-left:50px; padding-right:50px;">
+    <div class="row gy-3">
+        {% for photo in photos %}
+                    <div class="col-md-3">
+                        <div class="card my-2">
+                            <img class="image-thumbail" src="{{photo.image.url}}" alt="Card image cap" style="height: 200px;">
+                        </div>
+                    </div>
+                    {% empty %}
+                    <h3>No photos...</h3>
+                    {% endfor %}
+    </div>
+</div>
+
+
+
+
 {% endblock content %}

@@ -1,5 +1,70 @@
 {% extends 'base/main.html' %}
 
 {% block content %}
-<h2>contact</h2>
+
+<h3 class="mt-5" style=" padding-left: 200px; padding-top: 70px; color: maroon; font-family: 'Josefin Slab', serif;
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');">Durwa Sonawdekar</h3>
+
+<figure class="text-center mt-5">
+    <p style=" font-family: 'Amaranth', sans-serif; @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');color:#841617">If you like to know more,</p>
+    <p style="font-family: 'Amaranth', sans-serif; @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');color:#841617">or have a project in mind that you will to collaborate on.</p>
+    <p style="font-family: 'Amaranth', sans-serif; @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');color:#841617">Please do get in touch.I'd love to hear from.</p>
+    <a href="https://www.instagram.com/doodle_bites/" class="fa fa-instagram" style=" background: #87A96B;
+  color: white; padding: 5px;
+  font-size: 30px;
+  width: 70px;
+
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}"></a>
+    <a href="https://www.instagram.com/druv_1999/" class="fa fa-instagram" style=" background: #87A96B;
+  color: white; padding: 5px;
+  font-size: 30px;
+  width: 70px;
+
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}"></a>
+
+</figure>
+
+
+
+<div class="content mt-5" style="max-width: 500px;
+  margin: auto; ">
+  <!-- Page content -->
+    <form id="contact-form" method="POST" action="{% url 'send_email' %}">
+        {% csrf_token %}
+        <div class="mb-3">
+            <figure class="text-center">
+                <p style="color:black;">Contact</p>
+            </figure>
+
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control"  name="name">
+            <div class="form-text">Please enter full name</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Subject</label>
+            <input type="text" class="form-control" name="subject">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" ></textarea>
+        </div>
+
+        <button type="button" class="btn btn-outline-dark">Submit</button>
+</form>
+</div>
+
+
 {%  endblock content %}

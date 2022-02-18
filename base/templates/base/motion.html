@@ -1,0 +1,38 @@
+
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+
+<!--
+<div class="col-md-12 mt-3 " style="padding-left: 50px; padding-right: 50px; ">
+    <div class="row gy-3">
+        {% for photo in photos %}
+        <div class="col-md-3">
+            <a href="{% url 'photo' photo.id %}" class="thumbnail">
+            <img src="{{photo.image.url}}" class="img-thumbnail" style="width:200px;">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+-->
+
+<div class="col-md-12 mt-3" style="padding-left:50px; padding-right:50px;">
+    <div class="row gy-3">
+        {% for v in video %}
+                    <div class="col-md-3">
+                        <div class="card my-2">
+                           <video class="video-fluid z-depth-1" autoplay loop controls muted style="height: 200px;">
+                                <source src="{{v.vid.url}}" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <h3>No photos...</h3>
+                    {% endfor %}
+    </div>
+</div>
+
+
+{% endblock content %}
